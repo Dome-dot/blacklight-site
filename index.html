@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0b0b">
   <title>Blacklight Interstellar Group PMC</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
@@ -16,18 +16,34 @@
         <img src="logo.webp" alt="Blacklight Logo">
         <span>BLACKLIGHT</span>
       </a>
-      <nav class="menu">
+
+      <button class="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu desktop-only">
         <a href="#about">About</a>
         <a href="#manifesto">Manifesto</a>
         <a href="#history">History</a>
         <a href="#ranks">Ranks</a>
         <a href="#recruitment">Recruitment</a>
       </nav>
-      <div class="cta-group">
+
+      <div class="cta-group desktop-only">
         <a class="btn btn-small" href="https://robertsspaceindustries.com/en/orgs/BLING" target="_blank" rel="noopener">RSI ORG</a>
         <a class="btn btn-small btn-primary" href="https://discord.gg/5ry7kxjedC" target="_blank" rel="noopener">Discord</a>
       </div>
     </div>
+
+    <nav id="mobile-menu" class="mobile-drawer" hidden>
+      <a href="#about">About</a>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#history">History</a>
+      <a href="#ranks">Ranks</a>
+      <a href="#recruitment">Recruitment</a>
+      <a class="btn" href="https://robertsspaceindustries.com/en/orgs/BLING" target="_blank" rel="noopener">RSI ORG</a>
+      <a class="btn btn-primary" href="https://discord.gg/5ry7kxjedC" target="_blank" rel="noopener">Discord</a>
+    </nav>
   </header>
 
   <header class="hero">
@@ -95,5 +111,7 @@
   <footer class="footer">
     <div class="container"><p>© 2025 Blacklight Interstellar Group PMC</p></div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
